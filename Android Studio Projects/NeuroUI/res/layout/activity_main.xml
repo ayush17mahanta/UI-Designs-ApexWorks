@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:padding="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/headingTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Neuro UI"
+                android:textColor="#0e1111"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apex Works"
+                android:textColor="#232b2b"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clean Design"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_marginTop="40dp"
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/search_bar_background"
+            android:textSize="10sp"
+            android:hint="Search"
+            android:padding="16dp"
+            android:textColor="#0e1111"
+            android:textColorHint="#888888"
+            android:elevation="10dp"
+            android:layout_centerInParent="true" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="18dp"
+                android:background="@drawable/cv_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Favorite Language"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:columnCount="2"
+                    android:rowCount="2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="10dp">
+
+                    <FrameLayout
+                        android:id="@+id/btn1"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="10dp"
+                        android:elevation="10dp"
+                        android:layout_rowWeight="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/btn1234_bg">
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Java"
+                                android:textSize="10sp"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btn2"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="10dp"
+                        android:elevation="10dp"
+                        android:layout_rowWeight="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/btn1234_bg">
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kotlin"
+                                android:textSize="10sp"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/btn3"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="10dp"
+                        android:elevation="10dp"
+                        android:layout_rowWeight="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/btn1234_bg">
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="C++"
+                                android:textSize="10sp"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/btn4"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="10dp"
+                        android:elevation="10dp"
+                        android:layout_rowWeight="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/btn1234_bg">
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Python"
+                                android:textSize="10sp"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                    </FrameLayout>
+
+
+                </GridLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Social Media"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <ListView
+            android:id="@+id/listview"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listview_bg"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Professional Links"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:textSize="8sp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn5_bg"
+                android:layout_margin="5dp"
+                android:elevation="10dp"
+                android:text="Linkedin" />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:textSize="8sp"
+                android:background="@drawable/btn6_bg"
+                android:textColor="@color/white"
+                android:layout_margin="5dp"
+                android:elevation="10dp"
+                android:text="Linkedin"/>
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn7_bg"
+                android:textSize="8sp"
+                android:elevation="10dp"
+                android:textColor="@color/white"
+                android:layout_margin="5dp"
+                android:text="Linkedin"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
